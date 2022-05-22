@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.open,
+.close {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .open,
+  .close {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .open {
+    position: absolute;
+  }
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50vw;
+}
+
+input[type="checkbox"]:checked ~ aside {
+  left: 0;
+}
+
+input[type="checkbox"]:checked ~ .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+aside {
+  width: 20%;
+  min-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  aside {
+    position: absolute;
+    left: -250px;
+    height: 100%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background: #fff;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  margin-top: auto;
+  height: 300px;
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

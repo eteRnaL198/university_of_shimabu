@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+.header {
+    height: 160px;
+}
+.wrapper {
+    flex: 1;
+    display: flex;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+.nav {
+    width: 160px;
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+.main {
+    flex: 1;
+    @media screen and (max-width: 800px) {
+        order: -1;
+    }
+}
+.aside {
+    width: 240px;
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+.footer {
+    height: 100px;
+}

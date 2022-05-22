@@ -1,0 +1,12 @@
+.body {
+  margin: 0;
+}
+
+.box {
+  width: min(400px, 50vw); /* 小さい方が採用される 最大値を決める*/
+  width: max(400px, 50vw); /* 大きい方が採用される 最小値を決める */
+  width: clamp(400px, 50vw, 600px); /* 最小値, 推奨値, 最大値 */
+  height: 400px;
+  background-color: coral;
+  font-size: clamp(16px, 1rem + 3vw, 32px); /* 1remがないとズームした時についてこない */
+}
